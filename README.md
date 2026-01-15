@@ -4,84 +4,88 @@
 ![Platform](https://img.shields.io/badge/Platform-Linux-blue?style=for-the-badge&logo=linux)
 ![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
 
-A high-performance, CLI-based process management tool engineered in **Rust**. This tool provides granular control over Linux processes, focusing on real-time resource monitoring, automated alerts for system bottlenecks, and user-specific configuration profiles.
+A high-performance, CLI-based process management tool engineered in **Rust**.  
+Provides granular control over Linux processes with real-time monitoring, automated alerts, and user-specific profiles.
 
-> **Note:** Developed as a systems programming project to explore memory safety and concurrency in an OS context.
+> **Note:** Developed as a systems programming project focusing on memory safety and concurrency.
 
 ---
 
 ## 🚀 Key Features
 
 ### 1. Real-Time Resource Tracking
-* **CPU & Memory Monitoring:** Live tracking of resource consumption for active processes.
-* **Process Introspection:** deeply inspects process states and metadata directly from the `/proc` filesystem.
+- **CPU & Memory Monitoring:** Live tracking of active processes
+- **Process Introspection:** Reads process metadata directly from `/proc`
 
 ### 2. Automated Alert System
-* **Resource-Draining Detection:** The system automatically flags processes that exceed defined thresholds (e.g., >80% CPU usage or high memory leaks).
-* **User Alerts:** visual notifications in the terminal when a process is degrading system performance.
+- **Resource Threshold Detection:** Flags processes exceeding limits (e.g., >80% CPU)
+- **Terminal Alerts:** Visual warnings when system performance degrades
 
 ### 3. Custom User Profiles
-* **Configurable Environments:** Supports creating distinct profiles for different users or use-cases (e.g., `Gaming-Mode`, `Dev-Mode`).
-* **Custom Thresholds:** Each profile allows for unique alert settings and tracking intervals.
+- **Configurable Modes:** `Gaming-Mode`, `Dev-Mode`, etc.
+- **Per-Profile Thresholds:** Custom alert rules and intervals
 
 ---
 
 ## 🛠️ Tech Stack
 
-* **Language:** Rust
-* **Core Concepts:**
-    * Systems Programming & Memory Safety
-    * File I/O (parsing `/proc`)
-    * Concurrency & Threading
-    * Data Structures (Vectors, HashMaps for process tables)
+- **Language:** Rust
+- **Core Concepts:**
+  - Systems Programming & Memory Safety
+  - File I/O (`/proc` parsing)
+  - Concurrency & Threading
+  - Data Structures (Vectors, HashMaps)
 
 ---
 
 ## 💻 Usage
 
 ### Prerequisites
-* Rust & Cargo installed
-* Linux Environment (WSL2 or Native Linux)
+- Rust & Cargo installed
+- Linux Environment (WSL2 or Native Linux)
 
 ### Installation
 ```bash
-git clone [https://github.com/BeTechBo/Linux-Process-Manager.git](https://github.com/BeTechBo/Linux-Process-Manager.git)
+git clone https://github.com/BeTechBo/Linux-Process-Manager.git
 cd Linux-Process-Manager
 cargo build --release
-```
-
 Running the Tool
-To start the process manager in interactive mode:
+Interactive mode:
 
-Bash
+bash
+Copy code
 cargo run
-To load a specific user profile (e.g., for strict monitoring):
+Load a specific user profile:
 
-Bash
+bash
+Copy code
 cargo run -- --profile strict_monitor.toml
-🎥 See it in Action
-Watch the full system demonstration, including the alert system and context switching in real-time.
+🎥 Demo
+Watch the full system demonstration showcasing:
+
+Alert system
+
+Context switching
+
+Real-time monitoring
 
 📖 Architecture & Design
-For a deep dive into the system's design choices, including the PCB structure, memory safety guarantees, and scheduling analysis, please read the full technical report:
+A deep dive into:
 
-📄 Read the ProcSentinel Technical Report (PDF)
+PCB structure
 
-Design Highlight: The system uses a RefCell pattern to manage shared state across threads while adhering to Rust's strict borrowing rules.
+Memory safety guarantees
 
-🔮 Roadmap & Future Improvements
-[ ] GUI Dashboard: Implement a TUI (Text User Interface) using ratatui for better visualization.
+Scheduling analysis
 
-[ ] Network Monitoring: Add socket tracking to identify processes consuming high bandwidth.
+📄 ProcSentinel Technical Report (PDF)
 
-[ ] Daemon Mode: Allow the tool to run in the background as a systemd service.
+Design Highlight:
+Uses RefCell for shared mutable state across threads while respecting Rust’s borrowing rules.
 
-👥 Contributors
-This project was developed as a group collaboration for the Operating Systems course (Fall 2025).
+🔮 Roadmap
+ TUI Dashboard (ratatui)
 
-Ebram Raafat: Implemented the PCB structure, Context Switching logic, and CLI.
+ Network Monitoring (socket tracking)
 
-[Teammate Name]: Implemented the [Specific Feature].
-
-⚠️ Academic Integrity Disclaimer
-This project was created for the Operating Systems course (Fall 2025). It is published here for educational and portfolio purposes only. Current students should not copy this code for their own assignments, as it may violate the University's Academic Integrity policy.
+ Daemon Mode (systemd service)
