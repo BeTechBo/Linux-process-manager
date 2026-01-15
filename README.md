@@ -47,7 +47,7 @@ A high-performance, CLI-based process management tool engineered in **Rust**. Th
 ```bash
 git clone [https://github.com/BeTechBo/Linux-Process-Manager.git](https://github.com/BeTechBo/Linux-Process-Manager.git)
 cd Linux-Process-Manager
-cargo build --release
+cargo build --release```
 Running the Tool
 To start the process manager in interactive mode:
 
