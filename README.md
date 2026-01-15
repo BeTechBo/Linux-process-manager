@@ -49,12 +49,12 @@ git clone [https://github.com/YourUsername/Linux-Process-Manager.git](https://gi
 cd Linux-Process-Manager
 cargo build --release
 
-## 🎥 See it in Action
+### 🎥 See it in Action
 Watch the full system demonstration, including the alert system and context switching in real-time.
 
 [![Watch the Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID_HERE/0.jpg)](https://youtu.be/MiIiJk5SSks)
 
-## 📖 Architecture & Design
+### 📖 Architecture & Design
 For a deep dive into the system's design choices, including the PCB structure, memory safety guarantees, and scheduling analysis, please read the full technical report:
 
 [📄 **Read the ProcSentinel Technical Report (PDF)**](./ProcSentinel_Linux%20Process%20Manager.pdf)
