@@ -61,14 +61,12 @@ To load a specific user profile (e.g., for strict monitoring):
 cargo run -- --profile strict_monitor.toml
 ```
 ## 🎥 See it in Action
-Watch the full system demonstration, including the alert system and context switching in real-time.
+Watch the full system demonstration, including the alert system and context switching in real-time. [Here](https://youtu.be/MiIiJk5SSks)
+
 
 ## 📖 Architecture & Design
-For a deep dive into the system's design choices, including the PCB structure, memory safety guarantees, and scheduling analysis, please read the full technical report:
+For a deep dive into the system's design choices, including the PCB structure, memory safety guarantees, and scheduling analysis, please read the full technical report: [Here]([https://youtu.be/MiIiJk5SSks](https://github.com/BeTechBo/Linux-process-manager/blob/main/ProcSentinel_%20Linux%20Process%20Manager.pdf))
 
-## 📄 Read the ProcSentinel Technical Report (PDF)
-
-Design Highlight: The system uses a RefCell pattern to manage shared state across threads while adhering to Rust's strict borrowing rules.
 
 ## 🔮 Roadmap & Future Improvements
 [ ] GUI Dashboard: Implement a TUI (Text User Interface) using ratatui for better visualization.
