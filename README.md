@@ -40,28 +40,36 @@ A high-performance, CLI-based process management tool engineered in **Rust**. Th
 ## 💻 Usage
 
 ### Prerequisites
-* Rust & Cargo installed (`curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`)
+* Rust & Cargo installed
 * Linux Environment (WSL2 or Native Linux)
 
 ### Installation
 ```bash
-git clone [https://github.com/YourUsername/Linux-Process-Manager.git](https://github.com/YourUsername/Linux-Process-Manager.git)
+git clone [https://github.com/BeTechBo/Linux-Process-Manager.git](https://github.com/BeTechBo/Linux-Process-Manager.git)
 cd Linux-Process-Manager
-cargo build --release```
+cargo build --release
+Running the Tool
+To start the process manager in interactive mode:
 
-### 🎥 See it in Action
+Bash
+cargo run
+To load a specific user profile (e.g., for strict monitoring):
+
+Bash
+cargo run -- --profile strict_monitor.toml
+🎥 See it in Action
 Watch the full system demonstration, including the alert system and context switching in real-time.
 
-[![Watch the Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID_HERE/0.jpg)](https://youtu.be/MiIiJk5SSks)
-
-### 📖 Architecture & Design
+📖 Architecture & Design
 For a deep dive into the system's design choices, including the PCB structure, memory safety guarantees, and scheduling analysis, please read the full technical report:
 
-[📄 **Read the ProcSentinel Technical Report (PDF)**](./ProcSentinel_Linux%20Process%20Manager.pdf)
+📄 Read the ProcSentinel Technical Report (PDF)
 
-> **Design Highlight:** The system uses a `RefCell` pattern to manage shared state across threads while adhering to Rust's strict borrowing rules.
+Design Highlight: The system uses a RefCell pattern to manage shared state across threads while adhering to Rust's strict borrowing rules.
 
-## 🔮 Roadmap & Future Improvements
-* [ ] **GUI Dashboard:** Implement a TUI (Text User Interface) using `ratatui` for better visualization.
-* [ ] **Network Monitoring:** Add socket tracking to identify processes consuming high bandwidth.
-* [ ] **Daemon Mode:** Allow the tool to run in the background as a `systemd` service.
+🔮 Roadmap & Future Improvements
+[ ] GUI Dashboard: Implement a TUI (Text User Interface) using ratatui for better visualization.
+
+[ ] Network Monitoring: Add socket tracking to identify processes consuming high bandwidth.
+
+[ ] Daemon Mode: Allow the tool to run in the background as a systemd service.
