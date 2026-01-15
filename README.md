@@ -73,3 +73,13 @@ Design Highlight: The system uses a RefCell pattern to manage shared state acros
 [ ] Network Monitoring: Add socket tracking to identify processes consuming high bandwidth.
 
 [ ] Daemon Mode: Allow the tool to run in the background as a systemd service.
+
+👥 Contributors
+This project was developed as a group collaboration for the Operating Systems course (Fall 2025).
+
+Ebram Raafat: Implemented the PCB structure, Context Switching logic, and CLI.
+
+[Teammate Name]: Implemented the [Specific Feature].
+
+⚠️ Academic Integrity Disclaimer
+This project was created for the Operating Systems course (Fall 2025). It is published here for educational and portfolio purposes only. Current students should not copy this code for their own assignments, as it may violate the University's Academic Integrity policy.
