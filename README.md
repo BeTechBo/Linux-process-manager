@@ -65,7 +65,7 @@ Watch the full system demonstration, including the alert system and context swit
 
 
 ## 📖 Architecture & Design
-For a deep dive into the system's design choices, including the PCB structure, memory safety guarantees, and scheduling analysis, please read the full technical report: [Here](https://github.com/BeTechBo/Linux-process-manager/blob/main/ProcSentinel_%20Linux%20Process%20Manager.pdf)
+For a deep dive into the system's design choices, including the PCB structure, memory safety guarantees, and scheduling analysis, please read the full technical report: [Here](./ProcSentinel_Linux%20Process%20Manager.pdf)
 
 
 ## 🔮 Roadmap & Future Improvements
