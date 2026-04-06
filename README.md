@@ -33,23 +33,23 @@ If you are reviewing this codebase, I recommend starting with these core logic f
 * Linux Environment (WSL2 or Native Linux)
 
 ### Installation
+
 ```bash
 git clone [https://github.com/BeTechBo/Linux-Process-Manager.git](https://github.com/BeTechBo/Linux-Process-Manager.git)
 cd Linux-Process-Manager
 cargo build --release
+
 Running the Tool
 To start the process manager in interactive mode:
-
-Bash
 cargo run
+
 To load a specific user profile (e.g., for strict monitoring):
-
-Bash
 cargo run -- --profile strict_monitor.toml
-🎥 Demonstration & Architecture
-See it in Action: Watch the full system demonstration, including the alert system and context switching in real-time Here (Make sure to add your real link here).
 
-Architecture & Design: For a deep dive into the system's design choices, including the PCB structure, memory safety guarantees, and scheduling analysis, please read the full technical report Here (Make sure to add your real link here).
+🎥 Demonstration & Architecture
+See it in Action: Watch the full system demonstration, including the alert system and context switching in real-time Here.
+
+Architecture & Design: For a deep dive into the system's design choices, including the PCB structure, memory safety guarantees, and scheduling analysis, please read the full technical report Here.
 
 🔮 Roadmap & Future Improvements
 [ ] GUI Dashboard: Implement a TUI (Text User Interface) using ratatui for better visualization.
