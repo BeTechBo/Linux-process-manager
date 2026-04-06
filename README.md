@@ -41,19 +41,19 @@ cargo build --release
 ```
 
 
-Running the Tool
+### Running the Tool
 To start the process manager in interactive mode:
 cargo run
 
-To load a specific user profile (e.g., for strict monitoring):
+### To load a specific user profile (e.g., for strict monitoring):
 cargo run -- --profile strict_monitor.toml
 
-🎥 Demonstration & Architecture
+### 🎥 Demonstration & Architecture
 See it in Action: Watch the full system demonstration, including the alert system and context switching in real-time Here.
 
 Architecture & Design: For a deep dive into the system's design choices, including the PCB structure, memory safety guarantees, and scheduling analysis, please read the full technical report Here.
 
-🔮 Roadmap & Future Improvements
+### 🔮 Roadmap & Future Improvements
 [ ] GUI Dashboard: Implement a TUI (Text User Interface) using ratatui for better visualization.
 
 [ ] Network Monitoring: Add socket tracking to identify processes consuming high bandwidth.
