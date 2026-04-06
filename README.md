@@ -45,14 +45,14 @@ cargo build --release
 To start the process manager in interactive mode:
 cargo run
 
-### To load a specific user profile (e.g., for strict monitoring):
+### To load a specific user profile:
 cargo run -- --profile strict_monitor.toml
 
 ## 🎥 See it in Action
 Watch the full system demonstration, including the alert system and context switching in real-time. [Here](https://youtu.be/MiIiJk5SSks)
 
 ## 📖 Architecture & Design
-For a deep dive into the system's design choices, including the PCB structure, memory safety guarantees, and scheduling analysis, please read the full technical report: [Here](./Technical_Report.pdf)
+For a deep dive into the system's design choices, including the PCB structure, memory safety guarantees, and scheduling analysis, please read the full technical report: [Here](./Project_Technical_report.pdf)
 
 
 ### 🔮 Roadmap & Future Improvements
