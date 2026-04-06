@@ -48,10 +48,12 @@ cargo run
 ### To load a specific user profile (e.g., for strict monitoring):
 cargo run -- --profile strict_monitor.toml
 
-### 🎥 Demonstration & Architecture
-See it in Action: Watch the full system demonstration, including the alert system and context switching in real-time Here.
+## 🎥 See it in Action
+Watch the full system demonstration, including the alert system and context switching in real-time. [Here](https://youtu.be/MiIiJk5SSks)
 
-Architecture & Design: For a deep dive into the system's design choices, including the PCB structure, memory safety guarantees, and scheduling analysis, please read the full technical report Here.
+## 📖 Architecture & Design
+For a deep dive into the system's design choices, including the PCB structure, memory safety guarantees, and scheduling analysis, please read the full technical report: [Here](./Technical_Report.pdf)
+
 
 ### 🔮 Roadmap & Future Improvements
 [ ] GUI Dashboard: Implement a TUI (Text User Interface) using ratatui for better visualization.
